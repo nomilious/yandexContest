@@ -1,0 +1,32 @@
+Task A
+idea: foolish - find min and max between [L;R] within loop
+
+Task B
+idea: sum ratios and find gcd of upper and lower
+
+Task C
+idea: find minimum between going on radius and on arc+(with or without) radius
+
+Tabsk D
+idea: sort and compare
+
+Task E
+idea: too long to explain
+
+Task F
+idea: too long to explain
+
+Task G
+idea:dynamic programming - find biggest square formed up by checking the top, left and diagonal cells
+
+Task H
+idea: suppose everyone of first group solved 1 task and everyone from group b solved n task(ideal, but may be less)
+
+Task I
+idea: stack
+
+Task J
+idea: if the n % a is not greater than the number of formed groups multiplied by difference (b-a)
+
+
+
