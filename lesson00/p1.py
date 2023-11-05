@@ -6,7 +6,7 @@ for _ in range(m):
     l, r = map(int, input().split())
     
     # error handling
-    if l < 0 or r > len(arr) or not l < r:
+    if l < 0 or r > len(arr) or l >= r:
         print("NOT FOUND")
     _min, _max = 1001, -1
     # base logic
