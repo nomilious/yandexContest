@@ -1,24 +1,23 @@
-def partition(pivot, array):
-    e = g = 0
-    for n in range(len(array)):
+def partition(array, l, r, pivot):
+    equal = great = l
+    for n in range(l, r):
         if array[n] < pivot:
-            temp = array[n]# memorise the < than pivot
-            array[n] = array[g]# move the > pivot to current pos
-            array[g] = array[e]# move the == to pivot to pos G
-            array[e] = temp
-            e+=1
-            g+=1
+            temp = array[n]
+            array[n] = array[great]
+            array[great] = array[equal]
+            array[equal] = temp
+            equal += 1
+            great += 1
         elif array[n] == pivot:
-            array[n], array[g] = array[g], array[n]
-            g+=1
-    return e, len(array) - e
-        
-        
-        
+            array[n], array[great] = array[great], array[n]
+            great += 1
+    return equal, r-equal
 
 n = int(input())
-
 arr = list(map(int, input().split()))
 x = int(input())
-result = partition(x, arr)
+
+# Check if x is in the array; if not, append it to the end of the array
+result = partition(arr, 0, len(arr), x)
+
 print("\n".join(map(str, result)))
